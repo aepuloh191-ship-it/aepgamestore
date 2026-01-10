@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>AepGameStore - Top Up Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>AepGameStore</h1>
+  <p>Top Up Game Murah • Aman • Proses Cepat</p>
+</header>
+
+<section class="card">
+  <h2>🎮 Mobile Legends</h2>
+  <input id="ml_id" placeholder="ID Game (contoh: 12345678)">
+  <input id="ml_server" placeholder="Server (contoh: 1234)">
+  <select id="ml_nominal">
+    <option value="20000">86 Diamond - Rp20.000</option>
+    <option value="40000">172 Diamond - Rp40.000</option>
+    <option value="60000">257 Diamond - Rp60.000</option>
+  </select>
+  <button onclick="orderML()">Order ML</button>
+</section>
+
+<section class="card">
+  <h2>🎮 MCGG</h2>
+  <input id="mcgg_user" placeholder="Username">
+  <select id="mcgg_nominal">
+    <option value="10000">100 Coin - Rp10.000</option>
+    <option value="25000">300 Coin - Rp25.000</option>
+    <option value="40000">500 Coin - Rp40.000</option>
+  </select>
+  <button onclick="orderMCGG()">Order MCGG</button>
+</section>
+
+<footer>
+  <a class="wa" href="https://wa.me/62895609770006" target="_blank">
+    💬 Chat Admin WhatsApp
+  </a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
