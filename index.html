@@ -2,50 +2,28 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>AepGameStore - Top Up Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up Mobile Legends</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>AepGameStore</h1>
-  <p>Top Up Game Murah • Aman • Proses Cepat</p>
-</header>
+  <div class="card">
+    <h2>Top Up Mobile Legends</h2>
 
-<section class="card">
-  <h2>🎮 Mobile Legends</h2>
-  <input id="ml_id" placeholder="ID Game (contoh: 12345678)">
-  <input id="ml_server" placeholder="Server (contoh: 1234)">
-  <select id="ml_nominal">
-    <option value="20000">86 Diamond - Rp20.000</option>
-    <option value="40000">172 Diamond - Rp40.000</option>
-    <option value="60000">257 Diamond - Rp60.000</option>
-  </select>
-  <button onclick="orderML()">Order ML</button>
-</section>
+    <input type="number" id="id" placeholder="User ID">
+    <input type="number" id="server" placeholder="Server ID">
 
-<section class="card">
-  <h2>🎮 MCGG</h2>
-  <input id="mcgg_user" placeholder="Username">
-  <select id="mcgg_nominal">
-    <option value="10000">100 Coin - Rp10.000</option>
-    <option value="25000">300 Coin - Rp25.000</option>
-    <option value="40000">500 Coin - Rp40.000</option>
-  </select>
-  <button onclick="orderMCGG()">Order MCGG</button>
-</section>
+    <select id="nominal">
+      <option value="">Pilih Diamond</option>
+      <option value="86 Diamond">86 Diamond</option>
+      <option value="172 Diamond">172 Diamond</option>
+      <option value="257 Diamond">257 Diamond</option>
+    </select>
 
-<footer>
-  <a class="wa" href="https://wa.me/62895609770006" target="_blank">
-    💬 Chat Admin WhatsApp
-  </a>   
-</footer>
-<input type="text" id="id" placeholder="User ID">
-<input type="text" id="server" placeholder="Server">
-<select id="nominal">
-  <option value="">Pilih Nominal</option>
-  <option value="86 Diamond">86 Diamond</option>
-  <option value="172 Diamond">172 Diamond</option>
-</select>
+    <button onclick="orderML()">Order via WhatsApp</button>
+  </div>
 
-<button onclick="orderML()">Order ML</button>
+  <script src="script.js"></script>
+</body>
+</html>
