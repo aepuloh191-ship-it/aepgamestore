@@ -15,7 +15,7 @@ function orderML() {
     "Nominal: " + nominal;
 
   let nomorWA = "6285283515948";
-  let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
+  let link = "https://api.whatsapp.com/send?phone=" + nomorWA + "&text=" + encodeURIComponent(pesan);
 
   window.location.href = link; // PULL
 }
