@@ -14,9 +14,8 @@ function orderML() {
     "Server: " + server + "\n" +
     "Nominal: " + nominal;
 
-  let nomorWA = "6285283515948"; // NOMOR BARU
+  let nomorWA = "6285283515948";
   let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
-  // INI YANG PALING AMAN DI HP
-window.open(link);
+  window.location.href = link; // PULL
 }
