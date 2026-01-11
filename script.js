@@ -12,35 +12,24 @@ function orderMCGG() {
   if (!user) return alert("Username wajib diisi!");
   alert(`Order MCGG diterima!\nUser: ${user}\nTotal: Rp${nominal}`);
 }
-function orderWA(game) {
-  let id, server, nominal;
+function orderML() {
+  let id = document.getElementById("id").value;
+  let server = document.getElementById("server").value;
+  let nominal = document.getElementById("nominal").value;
 
-  if(game === "Mobile Legends") {
-    id = document.getElementById("userid").value;
-    server = document.getElementById("server").value;
-    nominal = document.getElementById("nominal").value;
-  } else if(game === "MCGG") {
-    id = document.getElementById("userid_mcgg").value;
-    server = "-";
-    nominal = document.getElementById("nominal_mcgg").value;
-  }
-
-  if(id === "" || nominal === "") {
-    alert("Lengkapi data dulu ya 😊");
+  if (id === "" || server === "" || nominal === "") {
+    alert("Lengkapi data dulu!");
     return;
   }
 
-  const pesan = `Halo AepGameStore 👋
-Saya mau top up
+  let pesan =
+    "Halo Admin, saya mau order Mobile Legends\n\n" +
+    "ID: " + id + "\n" +
+    "Server: " + server + "\n" +
+    "Nominal: " + nominal;
 
-Game: ${game}
-ID: ${id}
-Server: ${server}
-Nominal: ${nominal}
+  let nomorWA = "6281234567890"; // GANTI NOMOR INI
+  let url = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
-Pembayaran: DANA / QRIS
-Silakan admin kirim link pembayaran`;
-
-  const waLink = "https://wa.me/62895609770006?text=" + encodeURIComponent(pesan);
-  window.open(waLink, "_blank");
+  window.open(url, "_blank");
 }
