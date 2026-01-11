@@ -14,7 +14,9 @@ function orderML() {
     "Server: " + server + "\n" +
     "Nominal: " + nominal;
 
-  let nomorWA = "6285283515948";
+function orderML() {
+  alert("INI JS BARU\nNOMOR: 6285283515948");
+}
   let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
   window.location.href = link;
