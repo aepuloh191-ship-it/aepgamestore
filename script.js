@@ -15,7 +15,17 @@ function orderML() {
     "Nominal: " + nominal;
 
   let nomorWA = "6285283515948";
-  let link = "https://api.whatsapp.com/send?phone=" + nomorWA + "&text=" + encodeURIComponent(pesan);
+  let link =
+    "https://api.whatsapp.com/send?phone=" +
+    nomorWA +
+    "&text=" +
+    encodeURIComponent(pesan);
 
-  window.location.href = link; // PULL
+  // TAMPILKAN LOADING
+  document.getElementById("loading").classList.remove("hidden");
+
+  // DELAY BENTAR BIAR HALUS
+  setTimeout(() => {
+    window.location.href = link;
+  }, 1000);
 }
