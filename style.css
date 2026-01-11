@@ -131,3 +131,14 @@ button:active {
   display: block;
   margin: 0 auto 10px;
 }
+.logo-text {
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+  color: #111827;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  display: inline-block;
+  margin: 0 auto 14px;
+  box-shadow: 0 6px 20px rgba(250, 204, 21, 0.5);
+}
