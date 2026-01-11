@@ -1,97 +1,39 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
   background: #0f172a;
-  color: #e5e7eb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* HEADER */
-header {
-  text-align: center;
-  padding: 24px 16px;
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
-}
-
-header h1 {
-  margin: 0;
-  font-size: 28px;
-}
-
-header p {
-  margin-top: 6px;
-  font-size: 14px;
-}
-
-/* MAIN */
-main {
-  padding: 16px;
-}
-
-/* GAME LIST */
-.game-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-/* CARD */
-.game-card {
-  background: #020617;
-  padding: 16px;
-  border-radius: 12px;
-}
-
-.game-card h2 {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-/* FORM */
-.game-card input,
-.game-card select {
+.card {
+  background: white;
+  padding: 20px;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
+  max-width: 360px;
+  border-radius: 14px;
 }
 
-/* BUTTON ORDER */
-.game-card button {
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input, select, button {
   width: 100%;
   padding: 12px;
-  background: #22c55e; /* hijau WhatsApp */
-  color: #022c22;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: #22c55e;
+  color: white;
   border: none;
   border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.game-card button:hover {
-  opacity: 0.9;
-}
-
-/* PAYMENT INFO */
-.payment-info {
-  margin-top: 24px;
-  padding: 16px;
-  background: #020617;
-  border-radius: 12px;
-  text-align: center;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 32px;
-  padding: 16px;
-  text-align: center;
-  font-size: 12px;
-  color: #94a3b8;
 }
