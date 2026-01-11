@@ -14,7 +14,7 @@ function orderML() {
     "Server: " + server + "\n" +
     "Nominal: " + nominal;
 
-  let nomorWA = "6281234567890"; // GANTI NOMOR INI
+  let nomorWA = "62852983515948"; // GANTI NOMOR INI
   let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
   window.location.href = link;
