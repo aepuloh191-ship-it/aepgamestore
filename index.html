@@ -15,22 +15,27 @@
 </div>
 
 <div class="card">
-  <!-- LOADING -->
-<div id="loading" class="loading hidden">
-  <div class="spinner"></div>
-  <p>Menghubungkan ke WhatsApp...</p>
-</div>
+
+  <!-- PILIH GAME -->
+  <select id="game" onchange="ubahGame()">
+    <option value="Mobile Legends">Mobile Legends</option>
+    <option value="Free Fire">Free Fire</option>
+  </select>
+
+  <!-- INPUT ID -->
   <input type="number" id="id" placeholder="User ID">
   <input type="number" id="server" placeholder="Server ID">
 
+  <!-- NOMINAL -->
   <select id="nominal">
-    <option value="">Pilih Diamond</option>
+    <!-- ML default -->
+    <option value="">Pilih Nominal</option>
     <option value="86 Diamond">86 Diamond</option>
     <option value="172 Diamond">172 Diamond</option>
     <option value="257 Diamond">257 Diamond</option>
   </select>
 
-  <button onclick="orderML()">Order via WhatsApp</button>
+  <button onclick="orderGame()">Order via WhatsApp</button>
 </div>
 
 <p class="footer">© 2026 Top Up ML</p>
