@@ -18,5 +18,5 @@ function orderML() {
   let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
   // INI YANG PALING AMAN DI HP
-  window.location.href = link;
+window.open(link);
 }
