@@ -62,3 +62,26 @@ button:active {
   font-size: 12px;
   opacity: 0.6;
 }
+/* BANNER */
+.banner {
+  background: linear-gradient(135deg, #1e293b, #020617);
+  padding: 24px 16px 32px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* LOGO BULAT */
+.logo {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
