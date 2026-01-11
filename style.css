@@ -124,3 +124,10 @@ button:active {
 .hidden {
   display: none;
 }
+.logo-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px;
+}
