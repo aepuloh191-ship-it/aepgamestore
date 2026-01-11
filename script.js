@@ -14,10 +14,9 @@ function orderML() {
     "Server: " + server + "\n" +
     "Nominal: " + nominal;
 
-function orderML() {
-  alert("INI JS BARU\nNOMOR: 6285283515948");
-}
+  let nomorWA = "6285283515948"; // NOMOR BARU
   let link = "https://wa.me/" + nomorWA + "?text=" + encodeURIComponent(pesan);
 
+  // INI YANG PALING AMAN DI HP
   window.location.href = link;
 }
